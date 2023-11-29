@@ -1,0 +1,74 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para hacer la página más adaptable a dispositivos móviles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  /* Color gris cuando está deshabilitado */
+  cursor: not-allowed;
+  /* Cursor no permitido */
+}
+
+/* ... (otros estilos) ... */
+
+#output {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  max-height: 300px;
+  /* Altura máxima del contenedor para mostrar */
+  overflow: auto;
+  /* Agregar barras de desplazamiento cuando sea necesario */
+}
+
+#output table {
+  width: 100%;
+  /* La tabla ocupará todo el ancho del contenedor */
+  border-collapse: collapse;
+  /* Para evitar espacios entre las celdas */
+}
+
+#output table th,
+#output table td {
+  border: 1px solid #ccc;
+  /* Borde para las celdas de la tabla */
+  padding: 8px;
+  /* Espaciado interno */
+}
